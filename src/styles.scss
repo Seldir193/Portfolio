@@ -1,0 +1,226 @@
+$textColor: #ffffff;
+$purple: #9747FF;
+$lightBlue: #1CDAE6;
+$darkBlue: #141D2F;
+$green:#70E61C;
+$darkBlueTransparency: #141D2FCC;
+
+@mixin dFlex($jc: null, $ai: center, $g: 0px) {
+  display: flex;
+  align-items: $ai;
+  gap: $g;
+
+  @if $jc != null {
+    justify-content: $jc;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body  {
+  background-color: #141d2f;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  gap: 0;
+  overflow-y: hidden;
+}
+
+.talkButton {
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #70E61C;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  border: none;
+  text-decoration: none;
+  margin-top: 40px;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+
+  &:hover {
+    background-color: #9747FF;
+    transform: scale(1.1);
+  }
+}
+
+.mobile-Button{
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #70E61C;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+
+  &:hover {
+    background-color: #9747FF;
+    transform: scale(1.1);
+  }
+}
+
+.purpleButton {
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #9747FF;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  border: none;
+  text-decoration: none;
+  margin-top: 40px;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+
+  &:hover {
+    background-color: #70E61C;
+  }
+}
+
+.gitHubButton {
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px 30px;
+  border-color: #70E61C;
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  border: 1px solid #70E61C;
+  text-decoration: none;
+  margin-top: 40px;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+
+  &:hover {
+    background-color: #70E61C;
+  }
+}
+
+.fade-up-animation {
+  animation: fadeUpAnimationLeft 1s ease-in-out forwards;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-up-animation-right {
+  animation: fadeUpAnimationRight 1s ease-in-out forwards;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+@keyframes fadeUpAnimationRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUpAnimationLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+$poppinsFont: "Poppins";
+
+/* poppins-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./assets/fonts/poppins-v21-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/poppins-v21-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/poppins-v21-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/poppins-v21-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/poppins-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/poppins-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/poppins-v21-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/poppins-v21-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+

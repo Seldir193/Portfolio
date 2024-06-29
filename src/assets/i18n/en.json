@@ -1,0 +1,85 @@
+{
+    "header": {
+      "aboutMe": "About me",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "landingpage":{
+      "iAm": "I am",
+      "buttonTalk": "Let´s talk!",
+      "scroll": "Scroll down"
+    },
+    "aboutMe": {
+      "headline": "About me",
+      "introText": "Hi, I am a Front-end developer based in Duisburg, Germany. I am happy that you visited my site to look about my skills and see how i can bring your company forwards with you.",
+      "firstText": "Programming holds a special place in my heart because it allows me to transform ideas into reality. The ability to create something from nothing, solve complex problems, and continuously learn new technologies is incredibly rewarding.",
+      "secondText": "The keystone to my programming journey was mastering problem-solving. Understanding how to break down complex issues into manageable parts and applying logical thinking to devise effective solutions transformed my approach to coding."
+    },
+    "skills": {
+      "headline": "My Skills",
+      "textBox": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+      "button": "Get in touch"
+    },
+    "portfolio": {
+      "headline": "Explore a selection of my work here - interact with projects to see my skills in action",
+      "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "epl": "A simple Jump-and-run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken."
+    },
+    "contact": {
+      "headline": "Contact",
+      "questionFirst": "Got a problem to solve?",
+      "textBox": "Contact me trough this form, I am interestet in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "questionTwo": "Need a Frontend developer?",
+      "contactMe": "Contact me!",
+      "placeholderName": "Your name",
+      "nameRequired": "Your name is required",
+      "placeholderEmail": "Your email",
+      "emailRequired": "Your email is required",
+      "placeholderMessage": "Your message",
+      "messageRequired": "Your message is empty",
+      "privatPolicyFirst": "I've read the",
+      "privatPolicySecond": "and agree to the processing of my data as outlined.",
+      "privatPolicyLink": "privacy policy",
+      "button": "Send message :)",
+      "acceptPP": "Please accept the privacy policy",
+      "successMessage": "Thank you for your message"
+    },
+    "impressum": {
+      "headline": "Impressum",
+      "paragraph5": "Information according to § 5 TMG",
+      "Represented": "Represented by:",
+      "contact": "Contact",
+      "quelle": "Quelle"
+    },
+    "privacyPolicy": {
+      "headline": "Privacy policy",
+      "generateText1": "Personal data (hereinafter mostly referred to as data) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its content and the services offered there.",
+      "generateText2": "In accordance with Art. 4 No. 1. of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as GDPR), processing means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.",
+      "generateText3": "With the following privacy policy, we inform you in particular about the type, scope, purpose, duration and legal basis of the processing of personal data, insofar as we decide either alone or together with others on the purposes and means of processing. In addition, we inform you below about the third-party components we use for optimization purposes and to increase the quality of use, insofar as third parties process data under their own responsibility.",
+      "select": "Our privacy policy is structured as follows:",
+      "select1": "I. Information about us as the controller",
+      "select2": "II Rights of users and data subjects",
+      "select3": "III. Information on data processing",
+      "infoHeadline": "I. Information about us as the controller",
+      "infoText": "The responsible provider of this website in terms of data protection law is:",
+      "trueHeadline": "II Rights of the users and data subjects",
+      "trueText1": "With regard to the data processing described in more detail below, users and data subjects have the right to",
+      "trueText2": "to confirmation as to whether data concerning them is being processed, to information about the processed data, to further information about the data processing and to copies of the data (cf. also Art. 15 GDPR);",
+      "trueText3": "to rectification or completion of incorrect or incomplete data (see also Art. 16 GDPR);",
+      "trueText4": "to the immediate erasure of the data concerning them (see also Art. 17 GDPR) or, alternatively, if further processing is required in accordance with Art. 17 (3) GDPR, to the restriction of processing in accordance with Art. 18 GDPR;",
+      "trueText5": "to receive the data concerning them and provided by them and to transfer this data to other providers/controllers (cf. also Art. 20 GDPR);",
+      "trueText6": "to lodge a complaint with the supervisory authority if they are of the opinion that the data concerning them is being processed by the provider in breach of data protection regulations (see also Art. 77 GDPR).",
+      "trueText7": "In addition, the provider is obliged to inform all recipients to whom data has been disclosed by the provider of any rectification or erasure of data or restriction of processing carried out on the basis of Articles 16, 17 (1), 18 GDPR. However, this obligation does not apply if this notification is impossible or involves a disproportionate effort. Notwithstanding this, the user has a right to information about these recipients.",
+      "trueText8": "In accordance with Art. 21 GDPR, users and data subjects also have the right to object to the future processing of data concerning them, provided that the data is processed by the provider in accordance with Art. 6 para. 1 lit. f) GDPR. In particular, an objection to data processing for the purpose of direct advertising is permitted.",
+      "dataHeadline": "III. Information on data processing",
+      "dataText": "Your data processed when using our website will be deleted or blocked as soon as the purpose of storage no longer applies, the deletion of the data does not conflict with any statutory retention obligations and no other information is provided below on individual processing procedures.",
+      "contactHeadline": "Contact requests / contact option",
+      "contactText1": "If you contact us via contact form or e-mail, the data you provide will be used to process your request. The provision of the data is necessary for processing and answering your inquiry - without it we cannot answer your inquiry or can only answer it to a limited extent.",
+      "contactText2": "The legal basis for this processing is Art. 6 para. 1 lit. b) GDPR.",
+      "contactText3": "Your data will be deleted if your request has been conclusively answered and the deletion does not conflict with any statutory retention obligations, such as in the case of any subsequent contract processing.",
+      "linkMuster": "Sample data protection declaration",
+      "the": "the",
+      "nameOfSamplePartner": "Law firm Weiß & Partner"
+    }
+  }

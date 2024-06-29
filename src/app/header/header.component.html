@@ -1,0 +1,67 @@
+<header >
+  <div>
+    <a href="#landingpage" class="logoIcon">
+      <div class="rotate-animation" data-aos="fade-up">
+        <img src="assets/img/icons/name2.png" alt="Logo" />
+      </div>
+    </a>
+    <a class="burger" (click)="toggleMenu()">
+      <img *ngIf="!isMenuOpen" src="assets/img/icons/burger.png" alt="Menu" />
+      <img *ngIf="isMenuOpen" src="assets/img/icons/bar3.png" alt="Close Menu" />
+    </a>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="#aboutMe" (click)="activateLink('aboutMe')" [ngClass]="{'active': linkAboutMeActive}">
+            {{ 'header.aboutMe' | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#skills" (click)="activateLink('skills')" [ngClass]="{'active': linkSkillsActive}">
+            {{ 'header.skills' | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio" (click)="activateLink('portfolio')" [ngClass]="{'active': linkProjectsActive}">
+            {{ 'header.portfolio' | translate }}
+          </a>
+        </li>
+        <li>
+          <a class="contact" href="#contact" (click)="activateLink('contact')" [ngClass]="{'active': linkContactActive}">
+            {{ 'header.contact' | translate }}
+          </a>
+        </li>
+        <li>
+          <select class="language-selector" (change)="switchLanguage($event)">
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="burgerMenu" [class.open]="isMenuOpen">
+    <div id="mobile-burger"> 
+      <a class="headerLink hover" href="#aboutMe" (click)="activateLink('aboutMe')" [class.activeLink]="linkAboutMeActive">
+        {{ "header.aboutMe" | translate }}
+      </a>
+      <a class="headerLink hover" href="#skills" (click)="activateLink('skills')" [class.activeLink]="linkSkillsActive">
+        {{ "header.skills" | translate }}
+      </a>
+      <a class="headerLink hover" href="#projects" (click)="activateLink('portfolio')" [class.activeLink]="linkProjectsActive">
+        {{ "header.portfolio" | translate }}
+      </a>
+      <a class="headerLink hover" href="#contact" (click)="activateLink('contact')" [class.activeLink]="linkContactActive">
+        {{ "header.contact" | translate }}
+      </a>
+      <div>
+        <select class="language-selector" (change)="switchLanguage($event)">
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>

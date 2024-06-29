@@ -1,0 +1,55 @@
+<section id="landingpage">
+  <div class="main">
+    <div class="container">
+      <div class="imgContainer">
+        <img src="assets/img/icons/sk.png" alt="" />
+      </div>
+
+      <div class="textContainer">
+        <div class="fade-up-animation rotate-animation-side" data-aos="fade-up">
+          <p [class.sideText]="true" [class.deIam]="languageToSelected" class="sideText">{{ "landingpage.iAm" | translate }}</p>
+        </div>
+        <div class="textContent">
+          <div class="fade-up-animation rotate-animation" data-aos="fade-up">
+            <span class="nameText">Selcuk Kocyigit</span>
+          </div>
+          <div class="fade-up-animation rotate-animation" data-aos="fade-up">
+            <span class="jobNameText">FRONTEND DEVELOPER</span>
+          </div>
+          <div class="buttonContainer">
+            <a href="#contact" class="talkButton">{{ "landingpage.buttonTalk" | translate }}</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="backgroundShadowContainer">
+      <img class="backgroundShadow" src="assets/img/icons/vector0.png" alt="" />
+      <img class="backgroundShadowTwo" src="assets/img/icons/vector2.png" alt="" />
+    </div>
+
+    <div class="iconContainer">
+      <div class="lineLeft"></div>
+      <div class="innerIconContainer">
+        <a href="https://github.com/Seldir193" target="_blank">
+          <img src="assets/img/icons/github.png" alt="" />
+        </a>
+        <a href="mailto: info@selcuk-kocyigit.de" target="_blank">
+          <img src="assets/img/icons/email.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/kocyigit-selcuk-2933aa219/" target="_blank">
+          <img src="assets/img/icons/in.png" alt="" />
+        </a>
+        <span class="email">info&#64;selcuk-kocyigit.de</span>
+
+        <div [class.scrollDownDe]="!languageToSelected" class="scrollDownContainer">
+          <p>{{ "landingpage.scroll" | translate}}</p>
+          <img src="assets/img/icons/down.png" alt="" />
+        </div>
+      </div>
+      <div class="lineRight"></div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,317 @@
+
+@import "./../../styles.scss";
+
+section {
+    @include dFlex(center);
+    .app-my-skills {
+        @include dFlex(space-between, $ai:null,$g:54px);
+        padding: 37px 0 37px 100px;
+        margin: 0 auto;
+        color: $textColor;
+        z-index: 10;
+        width: 100vw;
+        max-width:1440px;
+
+        > div {
+            @include dFlex(null);
+            margin-left: auto;
+        }
+
+        .mobile-Button {
+            display: none;
+        }
+
+        .left-container {
+            flex-wrap: wrap;
+            row-gap: 54px;
+            max-width: 721px;
+            z-index: 8;
+            height: 414px;
+            gap: 123px;
+            margin:0;
+
+            > div {
+                @include dFlex(null,center,10px);
+                flex-direction: column;
+                width: 60px;
+                height: 60px;
+                
+                img:hover {
+                    animation: jump 1s ease infinite;
+
+                    @keyframes jump {
+                        0%,
+                        50%,
+                        100% {
+                            transform: translateY(0);
+                        }
+
+                        40% {
+                            transform: translateY(-30px);
+                        }
+
+                        80% {
+                            transform: translateY(-15px);
+                        }
+                    }
+                }
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        .aboutContentContainer {
+            @include dFlex(null,null,34px);
+            flex: 1;
+            max-width: 480px;
+            text-align: center;
+            flex-direction: column;
+
+            > h2 {
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 108px;
+                text-align: right;
+                margin: 0;
+            }
+
+            span {
+                color: $textColor;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19.2px;
+                text-align: right;
+                display: flex;
+                width:434px;
+            }
+        }
+    }
+
+    .buttonContainer {
+        @include dFlex(center,$ai:null);
+    }
+
+    .lineRight {
+        height: 4px;
+        background-color: $purple;
+        margin-top: -160px;
+        min-width: 58px;
+        margin-left: 16px;
+        flex-grow:0.5;
+
+        &:hover {
+            background-color: $lightBlue;
+        }
+    }
+
+    .lineLeft {
+        flex-grow:0.5;
+    }
+
+    .line-Right-Mobile {
+        display: none;
+    }
+
+    .green {
+        position: absolute;
+        left: 0;
+        margin-top: 100px;
+        z-index: -1;
+    }
+
+    .talkButton {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1239px) {
+    section {
+    .lineRight{
+        min-width: unset;
+        margin-left:unset;
+    }
+    .app-my-skills {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 100px;
+        padding: 25px 50px 25px 50px !important;
+        width:unset;
+
+        div {
+            margin-left: unset;
+            width: 1200px;
+        }
+
+        .aboutContentContainer {
+            margin-left: auto;
+            gap: 25px;
+
+            span{
+                width:unset;
+            }
+        }
+
+        .talkButton {
+            display: none;
+        }
+
+        .mobile-Button {
+            display: block;
+        }
+
+        .line-Right-Mobile {
+            height: 4px;
+            background-color: $purple;
+            min-width: 58px;
+            display: block;
+            margin-left: 16px;
+            margin-top: -80px;
+            width: 29%;
+
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+
+        .green {
+            margin-bottom: -300px;
+            margin-left: -102px;
+        }
+    }
+
+    .left-container {
+        @include dFlex(center,null);
+    }
+}
+}
+
+@media (max-width: 750px) {
+    section .app-my-skills {
+        div {
+            margin-left: unset;
+        }
+
+        .left-container {
+            height: unset !important;
+            max-width: 520px !important;
+        }
+
+        .lineRight{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    section{
+    .lineRight{
+        display: none;
+    }
+    .app-my-skills {
+        div {
+            margin-left: unset;
+            width: 400px;
+        }
+
+        .mobile-Button {
+            font-size: 16px;
+        }
+
+        .aboutContentContainer {
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .line-Right-Mobile {
+            width: 30%;
+            margin-top: -100px;
+
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+
+        .left-container {
+            height: unset !important;
+            max-width: 370px !important;
+            gap: 90px;
+
+            div img {
+                width: 50px;
+                height: 50px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 460px) {
+    section {
+    .lineRight{
+        display: none;
+    }
+
+    .lineLeft{
+        display: none;
+    }
+    
+    .app-my-skills {
+        div {
+            margin-left: unset;
+            width: 250px;
+        }
+
+        .mobile-Button {
+            font-size: 16px;
+        }
+
+        .aboutContentContainer {
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .line-Right-Mobile {
+            min-width: 100px;
+            display: block;
+            width: 50% !important;
+            margin-top: -120px;
+            margin-left: 10px;
+
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+
+        .left-container {
+            height: 414px !important;
+            max-width: 341px !important;
+            gap: 35px;
+
+            div img {
+                width: 40px;
+                height: 40px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+}
+
+
+
+
+
+

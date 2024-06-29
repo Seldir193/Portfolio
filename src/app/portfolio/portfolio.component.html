@@ -1,0 +1,42 @@
+<section id="portfolio">
+    <div class="fade-up-animation-right" data-aos="fade-up">
+      <div class="lineLeftEmpty"></div>
+      <div class="lineLeft"></div>
+      <div class="app-my-portfolio">
+        <h3>Portfolio</h3>
+      </div>
+      <div class="lineRight"></div>
+    </div>
+  
+    <div class="fade-up-animation" data-aos="fade-up">
+      <h2 >{{ "portfolio.headline" | translate }}</h2>
+    </div>
+  
+    <div [ngStyle]="{ 'padding-top': '160px' }">
+      <div class="main fade-animation">
+        <div *ngFor="let project of portfolio; let i = index" class="projectContainer"
+          [ngStyle]="{ 'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse' }">
+  
+          <div class="projectImg" [style.background-image]="'url(assets/img/icons/' + project['projectImg'] + ')'"
+          ></div>
+  
+          <div class="projects" [ngStyle]="{ 'align-items': i % 2 === 0 ? 'start' : 'end' }">
+            <h3>{{ project["projectName"] }}</h3>
+            <h4>{{ project["projectTechnologie"] }}</h4>
+            <span>{{ project["projectDescription"] | translate }}</span>
+  
+            <div class="buttonContainer">
+              <a href="{{ project.projectLink }}" target="_blank" class="purpleButton">Live Test</a>
+              <a href="{{ project.projectGitHub }}" target="_blank" class="gitHubButton">Github</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="shadowContainer">
+          <img src="assets/img/icons/background-laptop-shadow.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  

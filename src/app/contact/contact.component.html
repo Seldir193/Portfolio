@@ -1,0 +1,96 @@
+<section id="contact">
+  <div class="headline fade-up-animation">
+      <div class="lineLeft"></div>
+      <h2>{{ "contact.headline" | translate }}</h2>
+      <div class="lineRight"></div>
+  </div>
+  <div class="main">
+      <div class="contact-form fade-up-animation">
+          <h3>{{ "contact.questionFirst" | translate }}</h3>
+          <span>{{ "contact.textBox" | translate }}</span>
+          <span>{{ "contact.questionTwo" | translate }} <b class="contactMe">{{ "contact.contactMe" | translate }}</b></span>
+      </div>
+
+      <div class="container fade-up-animation-right">
+          <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+              <div class="input-container">
+                  <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                      placeholder="{{ 'contact.placeholderName' | translate }}" required
+                      [class.input-error]="!name.valid && name.touched"
+                      [class.input-success]="name.valid">
+                  <div class="icon-container">
+                      <img *ngIf="!name.valid && name.touched" src="assets/img/icons/error.png" alt="" />
+                      <img *ngIf="name.valid" src="assets/img/icons/success.png" alt="" />
+                  </div>
+              </div>
+              <span *ngIf="!name.valid && name.touched" class="messageRequired"
+                  [ngStyle]="{ 'color': '#E61C40' }">{{ "contact.nameRequired" | translate }}</span>
+
+              <div class="input-container">
+                  <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                      placeholder="{{ 'contact.placeholderEmail' | translate }}" required
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                      [class.input-error]="!email.valid && email.touched"
+                      [class.input-success]="email.valid">
+                  <div class="icon-container">
+                      <img *ngIf="!email.valid && email.touched" src="assets/img/icons/error.png" alt="" />
+                      <img *ngIf="email.valid" src="assets/img/icons/success.png" alt="" />
+                  </div>
+              </div>
+              <span *ngIf="!email.valid && email.touched" class="messageRequired"
+                  [ngStyle]="{ 'color': '#E61C40' }">{{ "contact.emailRequired" | translate }}</span>
+
+              <div class="input-container">
+                  <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+                      placeholder="{{ 'contact.placeholderMessage' | translate }}" required
+                      [class.input-error]="!message.valid && message.touched"
+                      [class.input-success]="message.valid"></textarea>
+                  <div class="icon-container-text">
+                      <img *ngIf="!message.valid && message.touched" src="assets/img/icons/error.png" alt="" />
+                      <img *ngIf="message.valid" src="assets/img/icons/success.png" alt="" />
+                  </div>
+              </div>
+              <span *ngIf="!message.valid && message.touched" class="messageRequired"
+                  [ngStyle]="{ 'color': '#E61C40' }">{{ "contact.messageRequired" | translate }}</span>
+
+              <div [ngStyle]="{ 'padding-top': '24px' }">
+                  <div class="policy-box">
+                      <div class="checkbox">
+                          <input #checkbox="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox"
+                              id="checkbox" name="checkbox" (click)="onCheckboxChange()" required>
+                      </div>
+                      <div class="privatPolicyBox">
+                          <span>{{ 'contact.privatPolicyFirst' | translate }}</span>
+                          <a (click)="scrollToPrivacysTop()">{{ 'contact.privatPolicyLink' | translate }}</a>
+                          <span>{{ 'contact.privatPolicySecond' | translate }}</span>                                                                             
+                      </div>
+                  </div>
+                  <span *ngIf="!checkbox.valid && checkbox.touched" [ngStyle]="{ 'color': '#E61C40' }">{{ "contact.acceptPP" | translate }}</span>
+              </div>
+
+              <div class="submitContainer">
+                  <input type="submit"
+                      [disabled]="!name.valid || !email.valid || !message.valid || !contactData.checkbox"
+                      [class.button-enabled]="name.valid && email.valid && message.valid && contactData.checkbox && !isSubmitted"
+                      [class.button-clicked]="isSubmitted"
+                      (click)="onSubmitClick()"
+                      [value]="'contact.button' | translate">
+              </div>
+              <nav *ngIf="messageSent">{{ "contact.successMessage" | translate }}</nav>
+          </form>
+
+          <a href="#" class="go-up">
+              <img src="assets/img/icons/Go-up-button.png">
+          </a>
+      </div>
+  </div>
+
+  <div class="footer-shadow">
+    <img  src="assets/img/icons/footer-shadow.png">
+</div>
+
+</section>
+
+
+

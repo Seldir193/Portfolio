@@ -1,0 +1,72 @@
+@import "./../../styles.scss";
+
+#impressum {
+    @include dFlex(null,center);
+    padding:160px 100px ;
+    flex-direction: column;
+
+    .main{
+        max-width: 1440px;
+        width:100%;
+        margin:0;
+       
+        h1 {
+            font-size: 90px;
+            color: $textColor;
+        }
+
+        h2,h3,h4,h5{
+            color: $green;
+            font-size: 20px;
+        }
+
+        a {
+            rotate: 270deg;
+            color:$green;
+            &:hover {
+                filter: invert(67%) sepia(95%) saturate(482%) hue-rotate(44deg) brightness(185%) contrast(84%);
+            }
+        }
+
+        p{
+            color: $textColor;
+            font-size: 16px;
+        }
+    }
+
+    .headline{
+        display: flex;
+        justify-content: space-between;
+        max-width:1440px;
+        width:100%;
+        margin:0;
+        align-items: center;
+    }
+}
+
+@media (max-width:1359px) {
+    #impressum{
+        padding:160px 25px;
+    }
+}
+
+@media (max-width:800px){
+    #impressum{
+        padding:120px 25px;
+    .main{
+        h1{
+            font-size:48px;
+        }
+    }
+}
+}
+
+@media (max-width:500px){
+    #impressum{
+        .main{
+            h1{
+                font-size:30px;
+            }
+        }
+    }
+}

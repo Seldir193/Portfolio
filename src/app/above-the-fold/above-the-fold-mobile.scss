@@ -1,0 +1,248 @@
+@media (max-width: 1359px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+
+      .imgContainer { flex-direction: unset; }
+
+      .buttonContainer { width: 90%; }
+
+      .textContainer {
+        margin: 0;
+
+        .sideText {
+          font-size: 64px;
+          line-height: 57.6px;
+          height: 59px;
+        }
+
+        .deIam {
+          height: 100px;
+        }
+
+        .nameText {
+          font-size: 90px;
+        }
+
+        .jobNameText {
+          font-size: 58px;
+          line-height: 67.6px;
+        }
+      }
+    }
+
+    .textContent{
+      margin-left:-30px;
+    }
+
+    .scrollDownContainer { display: none; }
+    .email { display: none; }
+    .iconContainer { margin-top: 130px; }
+
+    .backgroundShadowContainer {
+      top: 695px;
+
+      > img { height: unset; }
+
+      .backgroundShadow { display: none !important; }
+      .backgroundShadowTwo { display: block !important; }
+    }
+  }
+
+  @media (max-width: 1090px) {
+    .backgroundShadowContainer { top: 745px; }
+  }
+
+  @media (max-width: 860px) {
+    .container {
+      .textContainer {
+        .sideText {
+          font-size: 52px;
+          line-height:0px;
+          height:40px;
+        }
+
+        .deIam {
+          font-size: 38px !important;
+          height:60px;
+        }
+
+        .nameText {
+          font-size: 72px;
+          line-height: 74px;
+        }
+
+        .jobNameText {
+          font-size: 48px;
+          line-height: 67.6px;
+        }
+      }
+
+      .buttonContainer {
+        width: 90%;
+      }
+
+      .talkButton {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 725px) {
+    .backgroundShadowContainer { top: 795px; }
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      .textContainer {
+        position: relative;
+        top:30px;
+        width:unset;
+        .sideText {
+          font-size: 42px;
+          height: 23px;
+        }
+
+        .deIam {
+          font-size: 25px !important;
+          height: 60px;
+          line-height: 0px;
+        }
+
+        .nameText {
+          font-size: 60px;
+          line-height: 54px;
+        }
+
+        .jobNameText {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 590px) {
+    .backgroundShadowContainer { top: 750px; }
+  }
+
+  @media (max-width: 550px) {
+    .container {
+      .textContainer {
+        .sideText {
+          font-size: 36px;
+        }
+
+        .deIam {
+          font-size: 25px !important;
+          height: 50px;
+        }
+
+        .nameText {
+          font-size: 54px;
+          line-height: 54px;
+        }
+
+        .jobNameText {
+          font-size: 35px;
+          line-height: 44.8px;
+        }
+      }
+    }
+
+    .backgroundShadowContainer { top: 710px; }
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      .textContainer {
+        .sideText {
+          font-size: 32px;
+          height:30px;
+        }
+
+        .deIam {
+          font-size: 20px !important;
+          height: 50px;
+        }
+
+        .nameText {
+          font-size: 45px;
+          line-height: 54px;
+        }
+
+        .jobNameText {
+          font-size: 29px;
+          line-height: 34.8px;
+        }
+      }
+    }
+
+    .innerIconContainer { padding-left: unset; }
+
+    .backgroundShadowContainer { top: 670px; }
+  }
+
+  @media (max-width: 460px) {
+    .backgroundShadowContainer { top: 620px; }
+  }
+
+  @media (max-width: 420px) {
+    .container {
+      .textContainer {
+        .sideText {
+          font-size: 28px;
+          height:25px;
+        }
+
+        .deIam {
+          font-size: 18px !important;
+          line-height: 20px;
+          height: 45px;
+        }
+
+        .nameText {
+          font-size: 35px;
+          line-height: 50px;
+        }
+
+        .jobNameText {
+          font-size: 23px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .backgroundShadowContainer { top: 570px; }
+  }
+
+  .rotate-animation {
+    animation: rotate3DAnimation 1s ease-in-out forwards;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .rotate-animation-side {
+    animation: rotate3DAnimation 1s ease-in-out forwards;
+    transform-style: preserve-3d;
+  }
+
+
+@keyframes rotate3DAnimation {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@media (max-width: 380px) {
+  .backgroundShadowContainer { top: 530px; }
+}
+
+@media (max-width: 350px) {
+  .backgroundShadowContainer { top: 490px; }
+}

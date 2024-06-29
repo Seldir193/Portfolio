@@ -1,0 +1,209 @@
+@import "./../../styles.scss";
+
+.logoIcon img {
+  width: 100%;
+}
+
+header {
+  @include dFlex(center);
+  background-color: $darkBlue;
+  padding: 37px 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  box-sizing: border-box;
+
+  div {
+    @include dFlex(space-between);
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav {
+    @include dFlex(flex-end, null);
+
+    ul {
+      @include dFlex(null);
+      list-style: none;
+      margin: 0;
+
+      li {
+        margin-left: 29px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          color: $textColor;
+          text-decoration: none;
+          font-size: 23px;
+          font-weight: 400;
+          cursor: pointer;
+          position: relative;
+
+          &:hover {
+            color: $green;
+          }
+
+          &.active::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            display: block;
+            height: 2px;
+            width: 50px;
+            background: $purple;
+            transition: width 0.05s ease;
+          }
+        }
+      }
+    }
+  }
+
+  .language-selector {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .rotate-animation {
+    animation: rotate3DAnimation 1s ease-in-out forwards;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  @keyframes rotate3DAnimation {
+    0% {
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .contact {
+      display: block;
+    }
+
+    a.burger {
+      display: block;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: auto;
+      z-index: 1000;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .burgerMenu {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(20, 29, 47, 0.9);
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+
+      &.open {
+        display: block;
+      }
+    }
+
+    #mobile-burger {
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      height: 60vh;
+      z-index: 1000;
+      font-size: 23px;
+      gap: 29px;
+      justify-content: center;
+
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          color: $green;
+          transition: 125ms;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .hover {
+      height: 24px;
+      color: whitesmoke;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 23px;
+      white-space: nowrap;
+
+      &:hover {
+        transition: ease-in-out 200ms;
+        color: $green;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 40px;
+          background: $purple;
+          transition: ease-in-out 200ms;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 860px) {
+    a.burger {
+      display: none;
+    }
+
+    .burgerMenu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1359px) {
+  header {
+    padding: 37px 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
