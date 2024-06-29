@@ -61,9 +61,9 @@
                               id="checkbox" name="checkbox" (click)="onCheckboxChange()" required>
                       </div>
                       <div class="privatPolicyBox">
-                          <span>{{ 'contact.privatPolicyFirst' | translate }}</span>
-                          <a (click)="scrollToPrivacysTop()">{{ 'contact.privatPolicyLink' | translate }}</a>
-                          <span>{{ 'contact.privatPolicySecond' | translate }}</span>                                                                             
+                          <span>{{ 'contact.privatPolicyFirst' | translate }}
+                          <a  (click)="scrollToPrivacysTop()">{{ 'contact.privatPolicyLink' | translate }}</a>
+                          {{ 'contact.privatPolicySecond' | translate }}</span>                                                                             
                       </div>
                   </div>
                   <span *ngIf="!checkbox.valid && checkbox.touched" [ngStyle]="{ 'color': '#E61C40' }">{{ "contact.acceptPP" | translate }}</span>
