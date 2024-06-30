@@ -56,13 +56,13 @@ export class ContactComponent  {
             }, 5000);
           },
           error: (error) => {
-            console.error('Error submitting request: ', error);
           },
-          complete: () => console.info('Request sent successfully'),
+          complete: () => {
+          }
         });
     }
   }
-
+  
   isSubmitted = false;
 
   onSubmitClick() {

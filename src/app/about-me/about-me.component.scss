@@ -71,6 +71,7 @@ section {
           background-repeat: no-repeat;
           background-size: cover;
           transform: scaleX(-1);
+          margin-top:-20px;
 
           &:hover{
             border-color: $lightBlue;

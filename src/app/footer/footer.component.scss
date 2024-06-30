@@ -19,9 +19,14 @@ footer {
         background-color: $darkBlue;
         z-index:1;
 
+        a{
+        text-decoration: none;
+        }
+
         .logoBox {
             display: flex;
             flex-direction: column;
+            gap:3px;
 
             img {
                 width: 216px;
@@ -37,7 +42,6 @@ footer {
                 
                 &:hover{
                     color: $green;
-                    text-decoration: underline;
                 }
             }
         }
@@ -75,6 +79,28 @@ footer {
         display: none;
     }
 }
+
+.nameOne{
+    font-size: 59px;
+    color: $textColor;
+    font-weight: 700;
+  }
+  
+  .nameTwo{
+    font-size: 59px;
+    color: $purple;
+    font-weight: 700;
+  }
+  
+  .nameThree{
+    font-size: 59px;
+    color: $green;
+    font-weight: 700;
+  }
+
+  .textNone{
+    display: flex;
+  }
 
 @media (max-width:1359px){
     footer {

@@ -41,7 +41,7 @@ body  {
   color: white;
   font-weight: 400;
   font-size: 23px;
-  border: none;
+  border: 1px solid #70E61C;
   text-decoration: none;
   margin-top: 40px;
   box-shadow: 4px 4px 4px 0px #00000040;
@@ -62,7 +62,7 @@ body  {
   color: white;
   font-weight: 400;
   font-size: 23px;
-  border: none;
+  border: 1px solid #70E61C;
   text-decoration: none;
   box-shadow: 4px 4px 4px 0px #00000040;
   cursor: pointer;
@@ -82,7 +82,7 @@ body  {
   color: white;
   font-weight: 400;
   font-size: 23px;
-  border: none;
+  border: 1px solid $purple;
   text-decoration: none;
   margin-top: 40px;
   box-shadow: 4px 4px 4px 0px #00000040;

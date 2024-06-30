@@ -118,6 +118,7 @@ input[type=submit] {
     background-color: #B6B6B6;
     padding: 15px 30px;
     border-radius: 10px;
+    border: 1px solid #B6B6B6;
     cursor: not-allowed;
 
     &.button-enabled {
@@ -248,6 +249,8 @@ input[type="checkbox"] {
 
 .go-up {
   @include dFlex(flex-end,null,null);
+  width:39px;
+  margin-left:auto;
     &:hover {
         filter: invert(67%) sepia(95%) saturate(482%) hue-rotate(44deg) brightness(185%) contrast(84%);
     }

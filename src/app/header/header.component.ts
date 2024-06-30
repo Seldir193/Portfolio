@@ -13,7 +13,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
   activeLink: string | null = null;
   @Output() openMenuChange: EventEmitter<boolean> = new EventEmitter();
- 
+
   linkAboutMeActive: boolean = false;
   linkSkillsActive: boolean = false;
   linkProjectsActive: boolean = false;
@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
     this.linkSkillsActive = false;
     this.linkProjectsActive = false;
     this.linkContactActive = false;
-
+    
     if (link === 'aboutMe') {
       this.linkAboutMeActive = true;
     } else if (link === 'skills') {
@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
       this.linkProjectsActive = true;
     } else if (link === 'contact') {
       this.linkContactActive = true;
-    }
+    } 
 
     this.isMenuOpen = false; 
   }
@@ -79,4 +79,3 @@ export class HeaderComponent implements OnInit {
     }
   }
 }
-
