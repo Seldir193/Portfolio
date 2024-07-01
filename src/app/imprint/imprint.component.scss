@@ -2,7 +2,7 @@
 
 #impressum {
     @include dFlex(null,center);
-    padding:160px 100px ;
+    padding:120px 100px ;
     flex-direction: column;
 
     .main{
@@ -15,9 +15,20 @@
             color: $textColor;
         }
 
-        h2,h3,h4,h5{
+        h2,h3,h5{
             color: $green;
             font-size: 20px;
+        }
+
+        h4{
+            color:$textColor;
+            
+            margin-top:-20px;
+        }
+
+        h3{
+            margin-bottom: 0px;
+            margin-top:-20px;
         }
 
         a {
@@ -33,6 +44,11 @@
             font-size: 16px;
         }
     }
+
+    .address p {
+        margin: 0;
+        padding: 0;
+      }
 
     .headline{
         display: flex;
@@ -67,6 +83,10 @@
             h1{
                 font-size:30px;
             }
+        h4{
+            margin-top:unset;
+            width:300px;
+        }
         }
     }
 }

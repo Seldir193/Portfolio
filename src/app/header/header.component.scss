@@ -49,13 +49,12 @@ header {
     @include dFlex(flex-end, null);
 
     ul {
-      @include dFlex(null);
+      @include dFlex();
       list-style: none;
       margin: 0;
+      gap:32px;
 
       li {
-        margin-left: 29px;
-
         &:first-child {
           margin-left: 0;
         }
@@ -68,11 +67,16 @@ header {
           cursor: pointer;
           position: relative;
           white-space: nowrap;
+          transition: all 0.3s ease-in-out;
 
           &:hover {
             color: $green;
           }
 
+          &.active {
+            color: $green; 
+          }
+           
           &.active::after {
             content: "";
             position: absolute;
@@ -89,12 +93,35 @@ header {
     }
   }
 
-  .language-selector  {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    transition: background-color 0.2s ease;
+  .language-selector {
+    font-size: 23px;;
+    z-index: 1000;
+    display: flex;
+    overflow: hidden; 
+    color:$textColor;
+
+    .language-option {
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      flex-direction: column;
+
+      &.active::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 30px;
+        background: $purple;
+        transition: width 0.05s ease;
+      }
+
+      &.hover {
+        color: $green; 
+      } 
+
+      &:hover {
+        color: $green;
+      }
+    }
   }
 
   .contact {
@@ -129,6 +156,7 @@ header {
       align-items: center;
       margin-left: auto;
       z-index: 1000;
+      cursor: pointer;
     }
 
     nav {
@@ -151,7 +179,7 @@ header {
         display: block;
       }
     }
-
+    
     #mobile-burger {
       display: flex;
       flex-direction: column;
@@ -171,11 +199,16 @@ header {
           color: $green;
           transition: 125ms;
         }
-      }
+     }
 
       div {
         display: flex;
         justify-content: center;
+        list-style: none;
+
+        option{
+          min-height: unset;
+        }
       }
     }
 
@@ -195,7 +228,7 @@ header {
           content: "";
           display: block;
           height: 4px;
-          width: 40px;
+          width: 50px;
           background: $purple;
           transition: ease-in-out 200ms;
         }

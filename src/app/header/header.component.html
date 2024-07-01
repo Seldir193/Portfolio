@@ -34,16 +34,25 @@
             {{ 'header.portfolio' | translate }}
           </a>
         </li>
-        <li>
-          <a class="contact" href="#contact" (click)="activateLink('contact')" [ngClass]="{'active': linkContactActive}">
-            {{ 'header.contact' | translate }}
-          </a>
-        </li>
-        <li>
-          <select class="language-selector" (change)="switchLanguage($event)">
-            <option  value="en">EN</option>
-            <option  value="de">DE</option>
-          </select>
+        
+        <li class="language-selector-container">
+          <div class="language-selector">
+            <div 
+              class="language-option" 
+              (click)="switchLanguage($event)" 
+              [ngClass]="{'active': linkEnActive || 
+              selectedLanguage === 'en', 'hover': hoverEn}">
+                <option  value="en">EN</option>
+            </div>
+            |
+            <div 
+              class="language-option" 
+              (click)="switchLanguage($event)" 
+              [ngClass]="{'active': linkDeActive || 
+              selectedLanguage === 'de', 'hover': hoverDe}">
+              <option  value="de">DE</option>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -64,10 +73,26 @@
         {{ "header.contact" | translate }}
       </a>
       <div>
-        <select class="language-selector" (change)="switchLanguage($event)">
-          <option value="en">EN</option>
-          <option value="de">DE</option>
-        </select>
+
+        <li class="language-selector-container">
+          <div class="language-selector">
+            <div 
+              class="language-option" 
+              (click)="switchLanguage($event)" 
+              [ngClass]="{'active': linkEnActive || 
+              selectedLanguage === 'en', 'hover': hoverEn}">
+                <option  value="en">EN</option>
+            </div>
+            |
+            <div 
+              class="language-option" 
+              (click)="switchLanguage($event)" 
+              [ngClass]="{'active': linkDeActive || 
+              selectedLanguage === 'de', 'hover': hoverDe}">
+              <option  value="de">DE</option>
+            </div>
+          </div>
+        </li>
       </div>
     </div>
   </div>

@@ -265,13 +265,14 @@ nav {
 @include dFlex(center,center,null);
   box-shadow: 0px 0 24px 8px #141d2f inset;
   background-color: rgb(75 81 93 / 57%);
-  width: 24vw;
-  height: 16vh;
+  height: 14vh;
   border-radius: 24px;
   position: absolute;
-  bottom: 50%;
+  bottom: 100%;
   color: whitesmoke;
   font-size: 32px;
+  left:0px;
+  width:100%;
 }
 
 
@@ -298,6 +299,11 @@ nav {
 
     .go-up {
         margin-top: 20px;
+    }
+
+    nav{
+        bottom:42%;
+        left:0px;
     }
 }
 
@@ -329,6 +335,10 @@ nav {
 
     .footer-shadow {
       top:990px;
+   }
+
+   nav{
+    text-align: center;
    }
 }
 

@@ -7,7 +7,6 @@ import { RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -30,7 +29,6 @@ export class ContactComponent  {
   }
 
   messageSent = false;
-
 
   post = {
     endPoint: 'https://selcuk-kocyigit.de/sendMail.php',

@@ -18,7 +18,13 @@ export class HeaderComponent implements OnInit {
   linkSkillsActive: boolean = false;
   linkProjectsActive: boolean = false;
   linkContactActive: boolean = false;
+  linkEnActive: boolean = false; // Zustand für EN-Link
+  linkDeActive: boolean = false; // Zustand für DE-Link
+  hoverEn: boolean = false;
+  hoverDe: boolean = false;
   isMenuOpen: boolean = false;
+  selectedLanguage: string  = 'en' ;
+  hoverLanguage: string | null = null;
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');
@@ -30,11 +36,15 @@ export class HeaderComponent implements OnInit {
   }
 
   activateLink(link: string) {
+    if (link === 'en' || link === 'de') {
+      this.selectedLanguage = link;
+    }
+
     this.linkAboutMeActive = false;
     this.linkSkillsActive = false;
     this.linkProjectsActive = false;
     this.linkContactActive = false;
-    
+
     if (link === 'aboutMe') {
       this.linkAboutMeActive = true;
     } else if (link === 'skills') {
@@ -58,9 +68,24 @@ export class HeaderComponent implements OnInit {
   }
 
   switchLanguage(event: Event): void {
-    const selectElement = event.target as HTMLSelectElement;
-    const language = selectElement.value;
-    this.translate.use(language);
+    const language = (event.target as HTMLSelectElement).value;
+  
+    if (language && language !== this.selectedLanguage) {
+      this.translate.use(language);
+      this.activateLink(language);
+      this.updateLanguageFlags(language);
+    }
+  }
+  
+  private updateLanguageFlags(language: string): void {
+    this.hoverLanguage = language;
+  
+    setTimeout(() => {
+      this.hoverLanguage = language;
+    }, 200);
+  
+    this.hoverEn = language === 'en';
+    this.hoverDe = language === 'de';
   }
 
   setActiveLink(event: Event, link: string): void {
