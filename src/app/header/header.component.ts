@@ -33,9 +33,15 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   }
 
   activateLink(link: string) {
+   
     if (link === 'en' || link === 'de') {
       this.selectedLanguage = link;
     }
