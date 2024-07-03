@@ -93,6 +93,11 @@ header {
     }
   }
 
+  .language-selector-container {
+    display: flex;
+    justify-content: center;
+  }
+  
   .language-selector {
     font-size: 23px;;
     z-index: 1000;
@@ -104,6 +109,7 @@ header {
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
       flex-direction: column;
+      margin: 0 10px;
 
       &.active::after {
         content: "";
@@ -205,27 +211,49 @@ header {
         display: flex;
         justify-content: center;
         list-style: none;
-      }
+        width:auto;
       }
 
-    .hover{
+      .language-selector-mobile{
+        align-self: center;
+        border-radius: 10px;
+        padding: 7px 15px;
+        background-color: #70E61C;
+        color: white;
+        font-weight: 400;
+        font-size: 23px;
+        outline: none;
+        text-decoration: none;
+        box-shadow: 4px 4px 4px 0px #00000040;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        appearance: none;
+        overflow: hidden; 
+
       &:hover {
-        transition: ease-in-out 200ms;
-        color: $green;
-
-        &::after {
-          content: "";
-          display: block;
-          height: 4px;
-          width: 50px;
-          background: $purple;
-          transition: ease-in-out 200ms;
-        }
+        background-color: #9747FF;
       }
     }
-  }
 
-
+      .hover{
+        &:hover {
+          transition: ease-in-out 200ms;
+          color: $green;
+          text-align: center;
+  
+          &::after {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 50px;
+            background: $purple;
+            transition: ease-in-out 200ms;
+          }
+        }
+      }
+     }
+    }
+      
   @media (min-width: 860px) {
     a.burger {
       display: none;

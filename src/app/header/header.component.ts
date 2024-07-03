@@ -82,8 +82,10 @@ export class HeaderComponent implements OnInit {
   
     if (language && language !== this.selectedLanguage) {
       this.translate.use(language);
-      this.activateLink(language);
+      //this.activateLink(language);
+      this.selectedLanguage = language;
       this.updateLanguageFlags(language);
+
     }
   }
   

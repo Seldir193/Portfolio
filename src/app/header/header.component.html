@@ -71,28 +71,10 @@
       <a class="headerLink hover" href="#contact" (click)="activateLink('contact')" [class.activeLink]="linkContactActive">
         {{ "header.contact" | translate }}
       </a>
-      <div>
-
-        <li class="language-selector-container">
-          <div class="language-selector">
-            <div 
-              class="language-option" 
-              (click)="switchLanguage($event)" 
-              [ngClass]="{'active': linkEnActive || 
-              selectedLanguage === 'en', 'hover': hoverEn}">
-                <option  value="en">EN</option>
-            </div>
-            |
-            <div 
-              class="language-option" 
-              (click)="switchLanguage($event)" 
-              [ngClass]="{'active': linkDeActive || 
-              selectedLanguage === 'de', 'hover': hoverDe}">
-              <option  value="de">DE</option>
-            </div>
-          </div>
-        </li>
-      </div>
+      <select class="language-selector-mobile" (change)="switchLanguage($event)" >
+        <option  value="en">En</option>
+        <option  value="de">De</option>
+      </select>
     </div>
   </div>
 </header>
