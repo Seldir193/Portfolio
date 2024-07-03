@@ -38,6 +38,8 @@ export class HeaderComponent implements OnInit {
     } else {
       document.body.classList.remove('no-scroll');
     }
+
+    this.openMenuChange.emit(this.isMenuOpen);
   }
 
   activateLink(link: string) {
@@ -62,6 +64,8 @@ export class HeaderComponent implements OnInit {
     } 
 
     this.isMenuOpen = false; 
+
+    document.body.classList.remove('no-scroll');
   }
 
   ngOnInit(): void {

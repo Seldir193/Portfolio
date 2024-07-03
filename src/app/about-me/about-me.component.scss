@@ -1,6 +1,7 @@
 @import "./../../styles.scss";
 
 section {
+  padding-top:120px;
     .app-about-me {
      @include dFlex(null);
       padding: 160px 0 160px 100px;

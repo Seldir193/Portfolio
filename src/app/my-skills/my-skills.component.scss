@@ -2,6 +2,7 @@
 @import "./../../styles.scss";
 
 section {
+    padding-top:120px;
     @include dFlex(center);
     .app-my-skills {
         @include dFlex(space-between, $ai:null,$g:54px);

@@ -1,14 +1,16 @@
 @import "./../../styles.scss";
 
+section{
+  height:100vh;
+}
 .main {
-  @include dFlex(center);
-  width: 100vw;
+  @include dFlex(center,center,null);
   z-index: 10;
   flex-direction: column;
 
   .container {
     display: flex;
-    margin: 106px 47px;
+    margin: 120px 47px;
 
     .imgContainer {
       display: flex;
@@ -17,22 +19,22 @@
       background-repeat: no-repeat;
       background-position: center;
       z-index: -3;
-      width: 100%;
       max-width: 600px;
 
       img {
-        width: 100%;
-        height: 100%;
-        z-index: -2;
+        //width: 100%;
         object-fit: cover;
+        z-index: -2;
+        height: 600px;
+
       }
+
     }
 
     .textContainer {
       display: flex;
       max-height: 172px;
-      margin-top: 150px;
-      margin-left: -120px;
+      margin-top: 80px;
 
       .sideText {
         color: $textColor;
@@ -131,12 +133,12 @@
   }
 
   .scrollDownContainer {
-    @include dFlex(space-between, center, 60px);
+    @include dFlex(flex-start, center,60px);
     top: 323px;
     right: 0;
     z-index: 3;
     flex-direction: column;
-    max-height: 105px;
+    min-height:300px;
     animation: scrollTop 1.5s ease-in-out;
     animation-iteration-count: infinite;
     margin-left: auto;
@@ -181,45 +183,66 @@
     }
   }
 
-  @media (min-width: 1360px) and (max-width: 1645px),
-  (min-width: 1646px) and (max-width: 1705px) {
-   .backgroundShadowContainer { top: 395px; }
+  @media (min-width: 1360px) and (max-width: 1540px){
+  .backgroundShadowContainer { top: 230px; }
+}
+
+  @media(min-width: 1541px) and (max-width: 1690px) {
+   .backgroundShadowContainer { top: 180px; }
  }
 
-  @media (min-width: 1706px) and (max-width: 1900px) {
+  @media (min-width: 1691px) and (max-width: 1900px) {
     .backgroundShadowContainer {
-      top: 345px;
-
+      top: 150px;
     }
   }
 
   @media (min-width: 1901px) and (max-width: 2080px) {
     .backgroundShadowContainer {
-      top: 295px;
+      top: 100px;
     }
   }
 
-  @media (min-width: 1901px) and (max-width: 2115px) {
+
+  @media (min-width: 2081px) and (max-width: 2240px) {
     .backgroundShadowContainer {
-      top: 255px;
+      top: 60px;
     }
   }
 
-  @media (min-width: 2116px) and (max-width: 2260px) {
+  @media (min-width: 2241px) and (max-width: 2430px) {
     .backgroundShadowContainer {
-      top: 255px;
+      top: 10px;
     }
   }
 
-  @media (min-width: 2261px) and (max-width: 2500px) {
+  @media (min-width: 2331px) and (max-width: 2480px) {
     .backgroundShadowContainer {
-      top: 195px;
+      top: 0px;
     }
   }
 
-  @media (min-width: 2501px) and (max-width: 4000px) {
+  @media (min-width: 2481px) and (max-width: 2730px) {
     .backgroundShadowContainer {
-      top: 95px;
+      top: -50px;
+    }
+  }
+
+  @media (min-width: 2731px) and (max-width: 2910px) {
+    .backgroundShadowContainer {
+      top: -100px;
+    }
+  }
+
+  @media (min-width: 2911px) and (max-width: 3144px) {
+    .backgroundShadowContainer {
+      top: -150px;
+    }
+  }
+
+  @media (min-width: 3145px) and (max-width: 3340px) {
+    .backgroundShadowContainer {
+      top: -200px;
     }
   }
 

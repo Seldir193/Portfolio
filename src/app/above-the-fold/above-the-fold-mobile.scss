@@ -1,10 +1,15 @@
 @media (max-width: 1359px) {
+  
     .container {
       flex-direction: column;
       align-items: center;
       width:100%;
 
-      .imgContainer { flex-direction: unset; }
+      .imgContainer img { 
+        flex-direction: unset;
+        height:250px;
+        padding:30px;
+      }
 
       .buttonContainer { width: 90%; }
 
@@ -12,22 +17,23 @@
         margin: 0;
 
         .sideText {
-          font-size: 64px;
-          line-height: 57.6px;
-          height: 59px;
+          font-size: 48px;
+          line-height: 50px;
+          height:70px;
         }
 
         .deIam {
           height: 100px;
+          font-size: 32px !important;
         }
 
         .nameText {
-          font-size: 90px;
+          font-size: 72px;
         }
 
         .jobNameText {
-          font-size: 58px;
-          line-height: 67.6px;
+          font-size: 48px;
+          line-height: 22.6px;
         }
       }
     }
@@ -38,10 +44,9 @@
 
     .scrollDownContainer { display: none; }
     .email { display: none; }
-    .iconContainer { margin-top: 130px; }
-
+  
     .backgroundShadowContainer {
-      top: 695px;
+      top: 195px;
 
       > img { height: unset; }
 
@@ -51,31 +56,29 @@
   }
 
   @media (max-width: 1090px) {
-    .backgroundShadowContainer { top: 745px; }
+    .backgroundShadowContainer { top: 230px; }
   }
 
   @media (max-width: 860px) {
     .container {
       .textContainer {
         .sideText {
-          font-size: 52px;
-          line-height:0px;
-          height:40px;
+          font-size: 48px;
+          height:70px;
         }
 
         .deIam {
-          font-size: 38px !important;
-          height:60px;
+          font-size: 32px !important;
+          height:100px;
         }
 
         .nameText {
           font-size: 72px;
-          line-height: 74px;
         }
 
         .jobNameText {
           font-size: 48px;
-          line-height: 67.6px;
+          line-height: 22.6px;
         }
       }
 
@@ -87,10 +90,18 @@
         font-size: 16px;
       }
     }
+
+    .iconContainer
+     {
+       margin-top: -30px; 
+    }
+
+    .backgroundShadowContainer { top: 250px; }
+  
   }
 
   @media (max-width: 725px) {
-    .backgroundShadowContainer { top: 795px; }
+    .backgroundShadowContainer { top: 260px; }
   }
 
   @media (max-width: 700px) {
@@ -101,7 +112,8 @@
         width:unset;
         .sideText {
           font-size: 42px;
-          height: 23px;
+          height: 19px;
+          line-height:0px;
         }
 
         .deIam {
@@ -117,13 +129,14 @@
 
         .jobNameText {
           font-size: 38px;
+          line-height: 52px;
         }
       }
     }
   }
 
   @media (max-width: 590px) {
-    .backgroundShadowContainer { top: 750px; }
+    .backgroundShadowContainer { top: 280px; }
   }
 
   @media (max-width: 550px) {
@@ -150,7 +163,7 @@
       }
     }
 
-    .backgroundShadowContainer { top: 710px; }
+    .backgroundShadowContainer { top: 290px; }
   }
 
   @media (max-width: 500px) {
@@ -180,11 +193,11 @@
 
     .innerIconContainer { padding-left: unset; }
 
-    .backgroundShadowContainer { top: 670px; }
+    .backgroundShadowContainer { top: 300px; }
   }
 
   @media (max-width: 460px) {
-    .backgroundShadowContainer { top: 620px; }
+    .backgroundShadowContainer { top: 300px; }
   }
 
   @media (max-width: 420px) {
@@ -213,7 +226,7 @@
       }
     }
 
-    .backgroundShadowContainer { top: 570px; }
+    .backgroundShadowContainer { top: 305px; }
   }
 
   .rotate-animation {
@@ -240,9 +253,9 @@
 }
 
 @media (max-width: 380px) {
-  .backgroundShadowContainer { top: 530px; }
+  .backgroundShadowContainer { top: 305px; }
 }
 
 @media (max-width: 350px) {
-  .backgroundShadowContainer { top: 490px; }
+  .backgroundShadowContainer { top: 310px; }
 }

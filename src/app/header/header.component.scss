@@ -176,7 +176,7 @@ header {
       display: none;
       
       &.open {
-        display: block;
+        display: flex;
       }
     }
     
@@ -225,6 +225,7 @@ header {
     }
   }
 
+
   @media (min-width: 860px) {
     a.burger {
       display: none;
@@ -236,19 +237,27 @@ header {
   }
 }
 
-@media (max-width: 1359px) {
-  header {
-    padding: 37px 25px;
-  }
-}
-
 @media (max-width: 420px){
+  .nameHeight{
   .nameOne,
   .nameTwo,
   .nameThree {
     font-size: 38px; 
   }
 }
+}
+
+@media (max-width: 1359px) {
+  header {
+    padding: 37px 25px;
+  }
+}
+
+
+
+
+
+
 
 
 
