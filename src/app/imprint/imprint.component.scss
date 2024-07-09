@@ -32,11 +32,13 @@
         }
 
         a {
-            rotate: 270deg;
-            color:$green;
-            &:hover {
-                filter: invert(67%) sepia(95%) saturate(482%) hue-rotate(44deg) brightness(185%) contrast(84%);
-            }
+           rotate: 270deg;
+           color: $green; 
+           transition: color 0.3s, transform 0.3s;
+        &:hover {
+          color: $purple;
+       }
+
         }
 
         p{
@@ -57,6 +59,13 @@
         width:100%;
         margin:0;
         align-items: center;
+
+        img{
+            &:hover {
+                filter: invert(67%) sepia(95%) saturate(482%) hue-rotate(44deg) brightness(185%) contrast(84%);
+                transition: filter 0.3s;
+            }
+        }
     }
 }
 

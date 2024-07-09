@@ -15,6 +15,8 @@ export class AboutMeComponent implements OnInit {
   constructor(public translateService: TranslateService) { }
 
   ngOnInit(): void {
-    
-    };
+    this.translateService.setDefaultLang('en');
+    this.translateService.onLangChange.subscribe((event) => {
+    });
+  }
 }

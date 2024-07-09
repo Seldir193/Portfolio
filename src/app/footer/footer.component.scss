@@ -23,7 +23,7 @@ footer {
         text-decoration: none;
         }
 
-        .logoBox {
+        .logoBox  {
             display: flex;
             flex-direction: column;
             gap:3px;
@@ -33,6 +33,7 @@ footer {
             }
 
             a {
+                display: flex;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19.2px;
@@ -42,6 +43,7 @@ footer {
                 
                 &:hover{
                     color: $green;
+                    transition: color 0.3s; 
                 }
             }
         }

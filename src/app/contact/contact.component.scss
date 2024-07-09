@@ -256,6 +256,7 @@ input[type="checkbox"] {
   margin-left:auto;
     &:hover {
         filter: invert(67%) sepia(95%) saturate(482%) hue-rotate(44deg) brightness(185%) contrast(84%);
+        transition: filter 0.3s;
     }
 }
 

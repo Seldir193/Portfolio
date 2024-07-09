@@ -31,7 +31,10 @@
 
     </div>
     <img class="purple" src="assets/img/icons/shadow-right.png" alt="">
-    <div class="lineRight"></div>
+    <div class="lineRight" [ngClass]="{
+      'lineRight-de': translateService.currentLang === 'de',
+      'lineRight-en': translateService.currentLang === 'en'
+    }"></div>
   </div>
 </section>
 
