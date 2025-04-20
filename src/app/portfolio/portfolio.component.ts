@@ -34,6 +34,16 @@ export class PortfolioComponent implements OnInit {
       projectImg: 'laptop-pollo.png',
       translatedDescription: '',
     },
+    {
+      projectName: 'DABubble',
+      projectTechnologie: 'HTML | SCSS | Angular | Typescript | Firebase',
+      projectDescription:
+        'portfolio.dbl',
+      projectLink: 'https://dabubble.selcuk-kocyigit.de',
+      projectGitHub: 'https://github.com/Seldir193/DABubble.git',
+      projectImg: 'laptop2.png',
+      translatedDescription: '',
+    },
   ]
 
   ngOnInit(): void {
