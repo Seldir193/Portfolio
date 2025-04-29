@@ -25,7 +25,8 @@
       "headline": "Explore a selection of my work here - interact with projects to see my skills in action",
       "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "epl": "A simple Jump-and-run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.",
-      "dbl": "A real-time chat application for seamless teamwork. Exchange messages in public or private rooms, share files, and enjoy live typing indicators,reactions, and searchable conversation history."
+      "dbl": "A real-time chat application for seamless teamwork. Exchange messages in public or private rooms, share files, and enjoy live typing indicators,reactions, and searchable conversation history.",
+      "cdrbe": "Coderr backend powered by Django REST: provides sign-up, token auth, offer & order handling, plus reviews, filters and pagination."
     },
     "contact": {
       "headline": "Contact",

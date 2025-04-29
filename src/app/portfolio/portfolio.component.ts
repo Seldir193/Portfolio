@@ -44,6 +44,15 @@ export class PortfolioComponent implements OnInit {
       projectImg: 'laptop2.png',
       translatedDescription: '',
     },
+    {
+      projectName: 'Coderr Backend',
+      projectTechnologie: 'Python | Django | Django Rest Framework | PostgreSQL',
+      projectDescription: 'portfolio.cdrbe',         
+      projectLink: 'https://coderr.selcuk-kocyigit.de/',
+      projectGitHub: 'https://github.com/Seldir193/coderr_backend',
+      projectImg: 'laptop11.png',
+      translatedDescription: '',
+    },
   ]
 
   ngOnInit(): void {
