@@ -12,13 +12,13 @@
     },
     "aboutMe": {
       "headline": "Über mich",
-      "introText": "Hallo, ich bin ein Front-End-Entwickler mit Sitz in Duisburg, Deutschland. Ich freue mich, dass Sie meine Seite besucht haben, um sich über meine Fähigkeiten zu informieren und zu sehen, wie ich Ihr Unternehmen mit Ihnen voranbringen kann.",
-      "firstText": "Das Programmieren liegt mir besonders am Herzen, weil es mir ermöglicht, Ideen in die Realität umzusetzen. Die Möglichkeit, etwas aus dem Nichts zu erschaffen, komplexe Probleme zu lösen und ständig neue Technologien zu erlernen, ist unglaublich bereichernd.",
-      "secondText": "Der Grundstein für meinen Weg zum Programmieren war die Beherrschung der Problemlösung. Zu verstehen, wie man komplexe Probleme in überschaubare Teile zerlegt und logisches Denken anwendet, um effektive Lösungen zu entwickeln, hat meine Herangehensweise an das Programmieren verändert."
+      "introText": "Hallo, ich bin Full-Stack-Entwickler aus Duisburg. Schön, dass Sie vorbeischauen – hier erfahren Sie, wie ich digitale Produkte mit Angular, Django REST und modernen Dev-Ops-Workflows voranbringe.",
+      "firstText": "Mich fasziniert an der Programmierung, Ideen in funktionierende Software zu verwandeln: vom ersten UI-Mock-up über sichere APIs und sauber strukturierte Datenbankmodelle bis hin zu automatisierten Cloud-Deployments. Herausforderungen gehe ich durchgängig an, zerlege sie in klare Teilaufgaben, schreibe sauberen, testgetriebenen Code, steuere Hintergrundjobs mit RQ Worker und bringe Projekte mithilfe von Docker und CI/CD live.",
+      "secondText": "Dieser ganzheitliche Ansatz – kombiniert mit offener Kommunikation in Code-Reviews und Daily Stand-ups – hilft meinem Team und mir, nachhaltige und skalierbare Webanwendungen zu entwickeln. Genau diese Energie möchte ich auch in Ihre Projekte einbringen."
     },
     "skills": {
-      "headline": "Skills",
-      "textBox": "Ich habe meine Fähigkeiten im Bereich der Frontend-Entwicklung ausgebaut, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen.",
+      "headline": "My Skills",
+      "textBox": "Ich habe meine Full-Stack-Kompetenzen stetig ausgebaut und bereits mehrere einsatzreife Anwendungen geliefert.",
       "button": "Kontakt"
     },
     "portfolio": {
